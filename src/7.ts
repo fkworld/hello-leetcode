@@ -4,11 +4,7 @@
  * - 假设我们的环境只能存储 32 位有符号整数，其数值范围是 [−231,  231 − 1]。根据这个假设，如果反转后的整数溢出，则返回 0。
  */
 
-/**
- * @param {number} x
- * @return {number}
- */
-const reverse = function (x) {
+const reverse = (x: number): number => {
     let is_minus = false
     if (x < 0) { is_minus = true }
     let s = Math.abs(x).toString()
@@ -24,8 +20,4 @@ const reverse = function (x) {
     } else {
         return Number(new_s)
     }
-};
-
-// test
-let r = reverse(1534236469)
-console.log(r)
+}

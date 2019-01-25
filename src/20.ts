@@ -8,11 +8,7 @@
  * - 注意空字符串可被认为是有效字符串。
  */
 
-/**
- * @param {string} s
- * @return {boolean}
- */
-const isValid = function (s) {
+export const isValid = (s: string): boolean => {
     let stack = Array.of()
     // 特殊情况
     if (s.length % 2 === 1) { return false }

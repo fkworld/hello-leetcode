@@ -5,11 +5,7 @@
  * - 如果是，则返回最大元素的索引，否则返回-1。
  */
 
-/**
- * @param {number[]} nums
- * @return {number}
- */
-const dominantIndex = function (nums) {
+export const dominantIndex = (nums: number[]): number => {
     // 遍历出最大值
     let max = nums[0]
     let max_index = 0

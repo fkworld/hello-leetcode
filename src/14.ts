@@ -5,11 +5,7 @@
  * - 如果不存在公共前缀，返回空字符串 ""。
  */
 
-/**
- * @param {string[]} strs
- * @return {string}
- */
-const longestCommonPrefix = function (strs) {
+export const longestCommonPrefix = (strs: string[]): string => {
     if (strs.length === 0) {
         return ''
     }

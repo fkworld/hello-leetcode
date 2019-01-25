@@ -4,22 +4,14 @@
  * - 将两个有序链表合并为一个新的有序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。 
  */
 
-/**
- * Definition for singly-linked list.
- * function ListNode(val) {
- *     this.val = val;
- *     this.next = null;
- * }
- */
+interface ListNode {
+    val: number,
+    next: ListNode | null,
+}
 
-/**
- * @param {ListNode} l1
- * @param {ListNode} l2
- * @return {ListNode}
- */
-const mergeTwoLists = function (l1, l2) {
+export const mergeTwoLists = (l1: ListNode | null, l2: ListNode | null) => {
     // 系统中最后返回一个array
-    let new_node_list = Array.of()
+    let new_node_list = []
     while (true) {
         if (l1 != null) {
             new_node_list.push(l1.val)

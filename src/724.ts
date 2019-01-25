@@ -5,13 +5,9 @@
  * - 如果数组不存在中心索引，那么我们应该返回 -1。如果数组有多个中心索引，那么我们应该返回最靠近左边的那一个。
  */
 
-/**
- * @param {number[]} nums
- * @return {number}
- */
-const pivotIndex = function (nums) {
-    let left_sum_array = Array.of()
-    let right_sum_array = Array.of()
+export const pivotIndex = function (nums: number[]): number {
+    let left_sum_array = []
+    let right_sum_array = []
     left_sum_array[-1] = 0
     right_sum_array[-1] = 0
     for (let i = 0; i < nums.length; i++) {

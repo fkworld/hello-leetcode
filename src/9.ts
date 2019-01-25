@@ -5,17 +5,13 @@
  * - 你能不将整数转为字符串来解决这个问题吗？
  */
 
-/**
- * @param {number} x
- * @return {boolean}
- */
-var isPalindrome = function (x) {
+const isPalindrome = (x: number): boolean => {
     // 负数一定不是回文数
     if (x < 0) { return false }
 
     let len = x.toString().length
     // 子方法：获取整数x倒数第n位的值（从0开始）
-    const f = function (x, index) {
+    const f = (x: number, index: number) => {
         return Math.floor(x / (10 ** index)) % 10
     }
     for (let i = 0; i < len / 2; i++) {
@@ -24,8 +20,4 @@ var isPalindrome = function (x) {
         }
     }
     return true
-};
-
-// test
-let r = isPalindrome(12222221)
-console.log(r)
+}

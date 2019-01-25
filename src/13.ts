@@ -5,11 +5,7 @@
  * - 特殊：IV,IX,XL,XC,CD,CM
  */
 
-/**
- * @param {string} s
- * @return {number}
- */
-const romanToInt = function (s) {
+const romanToInt = (s: string): number => {
     // 先按照正常情况求和
     let sum = 0
     for (let c of s) {
@@ -33,4 +29,4 @@ const romanToInt = function (s) {
     if (s.includes('CD')) { sum -= 200 }
     if (s.includes('CM')) { sum -= 200 }
     return sum
-};
+}
