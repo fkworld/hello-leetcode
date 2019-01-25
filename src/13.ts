@@ -4,6 +4,7 @@
  * - 罗马数字包含以下七种字符：I-1,V-5,X-10,L-50,C-100,D-5000和M-1000
  * - 特殊：IV,IX,XL,XC,CD,CM
  */
+export { }
 
 const romanToInt = (s: string): number => {
     // 先按照正常情况求和

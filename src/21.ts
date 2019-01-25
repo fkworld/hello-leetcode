@@ -3,13 +3,14 @@
  * - https://leetcode-cn.com/problems/merge-two-sorted-lists/description/
  * - 将两个有序链表合并为一个新的有序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。 
  */
+export { }
 
 interface ListNode {
     val: number,
     next: ListNode | null,
 }
 
-export const mergeTwoLists = (l1: ListNode | null, l2: ListNode | null) => {
+const mergeTwoLists = (l1: ListNode | null, l2: ListNode | null) => {
     // 系统中最后返回一个array
     let new_node_list = []
     while (true) {

@@ -4,8 +4,9 @@
  * - 查找数组中的最大元素是否至少是数组中每个其他数字的两倍。
  * - 如果是，则返回最大元素的索引，否则返回-1。
  */
+export { }
 
-export const dominantIndex = (nums: number[]): number => {
+const dominantIndex = (nums: number[]): number => {
     // 遍历出最大值
     let max = nums[0]
     let max_index = 0

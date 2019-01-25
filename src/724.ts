@@ -4,8 +4,9 @@
  * - 我们是这样定义数组中心索引的：数组中心索引的左侧所有元素相加的和等于右侧所有元素相加的和。
  * - 如果数组不存在中心索引，那么我们应该返回 -1。如果数组有多个中心索引，那么我们应该返回最靠近左边的那一个。
  */
+export { }
 
-export const pivotIndex = function (nums: number[]): number {
+const pivotIndex = function (nums: number[]): number {
     let left_sum_array = []
     let right_sum_array = []
     left_sum_array[-1] = 0

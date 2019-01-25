@@ -7,8 +7,9 @@
  * - 左括号必须以正确的顺序闭合。
  * - 注意空字符串可被认为是有效字符串。
  */
+export { }
 
-export const isValid = (s: string): boolean => {
+const isValid = (s: string): boolean => {
     let stack = Array.of()
     // 特殊情况
     if (s.length % 2 === 1) { return false }

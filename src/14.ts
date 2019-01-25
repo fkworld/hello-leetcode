@@ -4,8 +4,9 @@
  * - 编写一个函数来查找字符串数组中的最长公共前缀。
  * - 如果不存在公共前缀，返回空字符串 ""。
  */
+export { }
 
-export const longestCommonPrefix = (strs: string[]): string => {
+const longestCommonPrefix = (strs: string[]): string => {
     if (strs.length === 0) {
         return ''
     }
