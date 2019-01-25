@@ -4,12 +4,7 @@
  * - 你可以假设每个输入只对应一种答案，且同样的元素不能被重复利用。
  */
 
-/**
- * @param {number[]} nums
- * @param {number} target
- * @return {number[]}
- */
-const twoSum = function (nums, target) {
+const twoSum = function (nums: number[], target: number): number[] | number {
     for (let i = 0; i < nums.length; i++) {
         for (let j = i + 1; j < nums.length; j++) {
             if (nums[i] + nums[j] === target) {
