@@ -7,32 +7,23 @@
 export { }
 
 const countAndSay = (n: number): string => {
-    if (n === 1) { return `${1}` }
-    const f = (str: string): string => {
-        let result = ``
-        let char = str[0]
-        let count = 0
-        for (let i = 0; i < str.length; i += 1) {
-            if (str[i] === char) {
-                count += 1
-            } else {
-                result += `${count}${char}`
-                char = str[i]
-                count = 1
-            }
+    if (n === 1) { return '1' }
+    let source = countAndSay(n - 1)
+    let result = ''
+    let char = source[0]
+    let count = 0
+    for (let i = 0; i < source.length; i += 1) {
+        if (source[i] === char) {
+            count += 1
+        } else {
             result += `${count}${char}`
+            char = source[i]
+            count = 1
         }
-        return result
     }
-
-    console.log(f(`1`))
-
-    let r = `${1}`
-    for (let i = 1; i <= n; i += 1) {
-        r = f(r)
-    }
-    return r
+    result += `${count}${char}`
+    return result
 };
 
 // test
-console.log(countAndSay(1))
+console.log(countAndSay(3))
