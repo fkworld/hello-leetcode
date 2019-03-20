@@ -61,7 +61,7 @@ const isSameTree = (p: TreeNode, q: TreeNode): boolean => {
     let list_q: (TreeNode | null)[] = [q]
     while (true) {
         let f = list_p.every((element, index, array) => {
-            if (element) {
+            if (element && list_q[index]) {
                 return element.val === (<any>list_q[index]).val
             } else {
                 return list_q[index] === null
@@ -97,4 +97,10 @@ const isSameTree = (p: TreeNode, q: TreeNode): boolean => {
         }
     }
 };
+
+// test
+
+let p = { val: 1, left: null, right: null }
+let q = { val: 1, left: null, right: null }
+console.log(isSameTree(p, q))
 
