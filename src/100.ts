@@ -48,6 +48,7 @@
  * 
  * 
  */
+export {}
 
 interface TreeNode {
     val: number,
