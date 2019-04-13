@@ -8,7 +8,6 @@
       "es2017",
     ],
     "outDir": "dist",
-    "sourceMap": true,
   },
   "include": [
     "src/**/*"
