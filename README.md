@@ -1,2 +1,3 @@
 # hello-leetcode
-LeetCode学习之路，使用JavaScript语言，使用TypeScript编写。
+
+LeetCode 学习之路，可以直接使用 typescript。
